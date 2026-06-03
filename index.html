@@ -40,7 +40,7 @@
   <header class="main-header">
     <div class="header-container">
       <a href="#" class="logo" id="header-logo">
-        <span class="logo-accent">V</span>B
+        <span class="logo-accent">Vidya</span> Bodepudi
       </a>
       <nav class="nav-menu" id="nav-menu">
         <a href="#about" class="nav-link">About</a>
@@ -68,9 +68,34 @@
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
         </a>
+        <!-- Mobile Hamburger -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close mobile menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#pillars" class="mobile-nav-link">Focus</a>
+    <a href="#terminal" class="mobile-nav-link">Terminal</a>
+    <a href="#speaking" class="mobile-nav-link">Speaking</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero-section" id="hero">
@@ -281,8 +306,8 @@
         <!-- Milestone 1 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-header font-mono">2026 — PRESENT</div>
           <div class="timeline-content">
+            <div class="timeline-header font-mono">2026 — PRESENT</div>
             <h3 class="timeline-title">Global Cybersecurity Director & InfoSec Advocate</h3>
             <p class="timeline-desc">
               Directing global compliance, threat hunting, and infrastructure protection. Frequent speaker on Secret Harvesting and developer mental health.
@@ -293,8 +318,8 @@
         <!-- Milestone 2 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-header font-mono">2022 — 2026</div>
           <div class="timeline-content">
+            <div class="timeline-header font-mono">2022 — 2026</div>
             <h3 class="timeline-title">Principal Cloud Security Architect</h3>
             <p class="timeline-desc">
               Pioneered core automated secret rotation and continuous security pipelines in large-scale Kubernetes and AWS environments.
@@ -305,8 +330,8 @@
         <!-- Milestone 3 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-header font-mono">2018 — 2022</div>
           <div class="timeline-content">
+            <div class="timeline-header font-mono">2018 — 2022</div>
             <h3 class="timeline-title">Enterprise Tech Infra Specialist (SMUD)</h3>
             <p class="timeline-desc">
               Engineered secure networking, grid computing, and high-availability enterprise services for major municipal utilities.
@@ -317,8 +342,8 @@
         <!-- Milestone 4 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-header font-mono">2014 — 2017</div>
           <div class="timeline-content">
+            <div class="timeline-header font-mono">2014 — 2017</div>
             <h3 class="timeline-title">Applied Mathematics at UC Davis (Student Athlete)</h3>
             <p class="timeline-desc">
               Developed strong mathematical foundation in statistics, numerical analysis, and algorithmic logic. Team goalie for lacrosse.
@@ -427,7 +452,7 @@
   <footer class="main-footer">
     <div class="section-container footer-container">
       <div class="footer-left">
-        <span class="logo font-bold"><span class="logo-accent">V</span>B</span>
+        <span class="logo font-bold"><span class="logo-accent">Vidya</span> Bodepudi</span>
         <span class="footer-copyright font-mono">© 2026 VIDYA BODEPUDI. ALL RIGHTS RESERVED.</span>
       </div>
       <div class="footer-right">

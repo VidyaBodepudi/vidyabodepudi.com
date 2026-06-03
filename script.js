@@ -30,6 +30,36 @@ themeToggleBtn.addEventListener('click', () => {
 });
 
 /* ==========================================================================
+   MOBILE NAVIGATION
+   ========================================================================== */
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+const mobileNavClose = document.getElementById('mobile-nav-close');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+const openMobileMenu = () => {
+  mobileNavOverlay.classList.add('active');
+  mobileNavDrawer.classList.add('active');
+  document.body.style.overflow = 'hidden';
+};
+
+const closeMobileMenu = () => {
+  mobileNavOverlay.classList.remove('active');
+  mobileNavDrawer.classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener('click', openMobileMenu);
+  mobileNavClose.addEventListener('click', closeMobileMenu);
+  mobileNavOverlay.addEventListener('click', closeMobileMenu);
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+}
+
+/* ==========================================================================
    INTERACTIVE GEOMETRIC CARD (HERO)
    ========================================================================== */
 const heroCard = document.querySelector('.interactive-geometric-card');
